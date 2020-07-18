@@ -17,15 +17,15 @@ export default class App extends React.Component{
                     justifyContent:'center', backgroundColor: this.state.color,}}>
                   
                   <TouchableOpacity style={[styles.buton,{backgroundColor: "#444f59"}]} onPress={() => { this.setState({color: "#444f59" }) }}> 
-                    <Text style={{fontSize: 25,}}>Benim</Text>
+                    <Text style={{fontSize: 25,}}>Button 1</Text>
                   </TouchableOpacity>
 
                   <TouchableOpacity style={[styles.buton, {backgroundColor: "#f1404b"}]} onPress={() => { this.setState({color: "#f1404b" }) }}> 
-                    <Text style={{fontSize: 25,}}>Canım</Text>
+                    <Text style={{fontSize: 25,}}>Button 2</Text>
                   </TouchableOpacity>
 
                   <TouchableOpacity style={[styles.buton , {backgroundColor: "#FFBC42"}]} onPress={() => { this.setState({color: "#FFBC42" }) }}> 
-                    <Text style={{fontSize: 25,}}>Aşkilum</Text>
+                    <Text style={{fontSize: 25,}}>Button 3</Text>
                   </TouchableOpacity>
 
 
