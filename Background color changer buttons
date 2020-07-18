@@ -1,0 +1,48 @@
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+
+export default class App extends React.Component{
+
+    state = {
+        color: "#fff",
+        }
+
+        render() {
+            
+            return(
+                
+                <View style={{ flex: 1,
+                    alignItems:'center',
+                    justifyContent:'center', backgroundColor: this.state.color,}}>
+                  
+                  <TouchableOpacity style={[styles.buton,{backgroundColor: "#444f59"}]} onPress={() => { this.setState({color: "#444f59" }) }}> 
+                    <Text style={{fontSize: 25,}}>Benim</Text>
+                  </TouchableOpacity>
+
+                  <TouchableOpacity style={[styles.buton, {backgroundColor: "#f1404b"}]} onPress={() => { this.setState({color: "#f1404b" }) }}> 
+                    <Text style={{fontSize: 25,}}>Canım</Text>
+                  </TouchableOpacity>
+
+                  <TouchableOpacity style={[styles.buton , {backgroundColor: "#FFBC42"}]} onPress={() => { this.setState({color: "#FFBC42" }) }}> 
+                    <Text style={{fontSize: 25,}}>Aşkilum</Text>
+                  </TouchableOpacity>
+
+
+                </View>
+                      
+            );
+        }
+};
+
+const styles = StyleSheet.create({
+    buton: {
+        width: "95%",
+        height:"5%",
+        marginTop:20, 
+        justifyContent: 'center',
+        alignItems: 'center',
+
+    }
+
+});
